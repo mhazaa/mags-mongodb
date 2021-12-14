@@ -1,11 +1,11 @@
 {
   "name": "mags-mongodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper methods for MongoDB",
   "main": "src/index.js",
   "scripts": {
-	  "build": "tsc",
-	  "dev": "tsc --watch"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "keywords": [],
   "author": "Magdi Hazaa",
