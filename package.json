@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Helper methods for MongoDB",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
