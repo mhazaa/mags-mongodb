@@ -1,6 +1,6 @@
 {
   "name": "@mhazaa/mongo-controller",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Helper methods for MongoDB",
   "main": "src/index.js",
   "types": "src/index.d.ts",
