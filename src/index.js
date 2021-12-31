@@ -59,7 +59,7 @@ class MagsMongoDB {
         this.db; //initialized by the connect() method
     }
     getUrl() {
-        return `mongodb+srv://${this.config.DBUSERNAME}:${this.config.DBPASSWORD}@${this.config.DBCLUSTERNAME}.mongodb.net/${this.config.DBNAME}?retryWrites=true&w=majority`;
+        return `mongodb+srv://${this.config.DBUSERNAME}:${this.config.DBPASSWORD}@${this.config.DBCLUSTERNAME}.${this.config.DBCLUSTERID}.mongodb.net/${this.config.DBNAME}?retryWrites=true&w=majority`;
     }
     async connect() {
         await this.client.connect();

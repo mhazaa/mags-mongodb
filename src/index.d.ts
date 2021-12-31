@@ -3,6 +3,7 @@ interface Config {
     DBUSERNAME: string;
     DBPASSWORD: string;
     DBCLUSTERNAME: string;
+    DBCLUSTERID: string;
     DBNAME: string;
 }
 declare class Collection {
