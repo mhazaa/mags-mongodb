@@ -15,7 +15,7 @@ declare class Collection {
     insertOne(data: object): Promise<MongoDB.Document>;
     createOrUpdateDocument(query: object, update: object): Promise<MongoDB.Document>;
 }
-declare class MagsMongoDB {
+declare class DB {
     private config;
     private url;
     private client;
@@ -26,4 +26,4 @@ declare class MagsMongoDB {
     collection(collectionName: string): Collection;
 }
 export { Config, Collection };
-export default MagsMongoDB;
+export default DB;

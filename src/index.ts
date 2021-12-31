@@ -39,7 +39,7 @@ class Collection {
 	}
 }
 
-class MagsMongoDB {
+class DB {
 	private config: Config;
 	private url: string;
 	private client: MongoDB.MongoClient;
@@ -73,4 +73,4 @@ export {
 	Config,
 	Collection
 };
-export default MagsMongoDB;
+export default DB;

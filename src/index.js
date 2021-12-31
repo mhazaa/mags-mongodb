@@ -47,7 +47,7 @@ class Collection {
     }
 }
 exports.Collection = Collection;
-class MagsMongoDB {
+class DB {
     config;
     url;
     client;
@@ -73,4 +73,4 @@ class MagsMongoDB {
         return new Collection(this.db.collection(collectionName));
     }
 }
-exports.default = MagsMongoDB;
+exports.default = DB;
