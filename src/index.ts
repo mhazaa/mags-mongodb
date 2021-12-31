@@ -4,6 +4,7 @@ interface Config {
 	DBUSERNAME: string;
 	DBPASSWORD: string;
 	DBCLUSTERNAME: string;
+	DBCLUSTERID: string;
 	DBNAME: string;
 }
 
@@ -52,7 +53,7 @@ class MagsMongoDB {
 	}
 
 	private getUrl (): string {
-		return `mongodb+srv://${this.config.DBUSERNAME}:${this.config.DBPASSWORD}@${this.config.DBCLUSTERNAME}.mongodb.net/${this.config.DBNAME}?retryWrites=true&w=majority`;
+		return `mongodb+srv://${this.config.DBUSERNAME}:${this.config.DBPASSWORD}@${this.config.DBCLUSTERNAME}.${this.config.DBCLUSTERID}.mongodb.net/${this.config.DBNAME}?retryWrites=true&w=majority`;
 	}
 
 	public async connect (): Promise<MongoDB.Db> {
