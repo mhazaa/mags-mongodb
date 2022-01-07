@@ -2,11 +2,10 @@
   "name": "@mhazaa/mongo-controller",
   "version": "1.0.9",
   "description": "Helper methods for MongoDB",
-  "module": "src/esm/index.js",
-  "types": "src/esm/index.d.ts",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],

@@ -4,7 +4,7 @@
     "module": "esNext",
 	"moduleResolution": "node",
 	"declaration": true,
-	"outDir": "./src/esm",
+	"outDir": "./build/esm",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
