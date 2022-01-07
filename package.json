@@ -1,23 +1,29 @@
 {
-  "name": "@mhazaa/mongo-controller",
-  "version": "1.0.10",
-  "description": "Helper methods for MongoDB",
-  "main": "build/cjs/index.js",
-  "module": "build/esm/index.js",
-  "scripts": {
-    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
-    "prepublishOnly": "npm run build"
-  },
-  "keywords": [],
-  "author": "Magdi Hazaa",
-  "license": "ISC",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.5.0",
-    "typescript": "^4.5.4"
-  },
-  "dependencies": {
-    "mongodb": "^4.2.2"
-  }
+	"name": "@mhazaa/mongo-controller",
+	"version": "1.0.10",
+	"description": "Helper methods for MongoDB",
+	"main": "build/cjs/index.js",
+	"module": "build/esm/index.js",
+	"exports": {
+		".": {
+			"import": "build/esm/index.js",
+			"require": "build/cjs/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [],
+	"author": "Magdi Hazaa",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.7.0",
+		"@typescript-eslint/parser": "^5.7.0",
+		"eslint": "^8.5.0",
+		"typescript": "^4.5.4"
+	},
+	"dependencies": {
+		"mongodb": "^4.2.2"
+	}
 }
