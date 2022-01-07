@@ -1,6 +1,6 @@
 {
   "name": "@mhazaa/mongo-controller",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Helper methods for MongoDB",
   "module": "src/esm/index.js",
   "types": "src/esm/index.d.ts",
