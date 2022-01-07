@@ -2,12 +2,12 @@
 	"name": "@mhazaa/mongo-controller",
 	"version": "1.0.11",
 	"description": "Helper methods for MongoDB",
-	"main": "build/cjs/index.js",
-	"module": "build/esm/index.js",
+	"main": "./build/cjs/index.js",
+	"module": "./build/esm/index.js",
 	"exports": {
 		".": {
-			"import": "build/esm/index.js",
-			"require": "build/cjs/index.js"
+			"require": "./build/cjs/index.js",
+			"import": "./build/esm/index.js"
 		}
 	},
 	"scripts": {
