@@ -2,11 +2,12 @@
   "name": "@mhazaa/mongo-controller",
   "version": "1.0.7",
   "description": "Helper methods for MongoDB",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "module": "src/esm/index.js",
+  "types": "src/esm/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+	"prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "Magdi Hazaa",
